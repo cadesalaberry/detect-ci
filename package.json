@@ -4,7 +4,7 @@
   "scripts": {
     "test": "yarn detect-ci",
     "postinstall": "yarn detect-ci",
-    "detect-ci": "$CI || (echo 'NOT IN CI' && false)"
+    "detect-ci": "echo \"CI:$CI\" && $CI || (echo 'NOT IN CI' && false)"
   },
   "dependencies": {
   },
