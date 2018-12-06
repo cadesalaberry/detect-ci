@@ -1,0 +1,13 @@
+{
+  "name": "detect-ci",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "yarn detect-ci",
+    "postinstall": "yarn detect-ci",
+    "detect-ci": "test $CI || echo 'NOT IN CI' && false"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
